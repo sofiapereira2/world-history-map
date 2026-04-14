@@ -1,0 +1,5 @@
+anthropic
+dash>=2.14.0
+plotly>=5.18.0
+pycountry
+pandas
