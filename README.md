@@ -13,21 +13,41 @@ Click any country on the globe → the AI generates an engaging historical summa
 - Historical summaries generated in real time by Claude AI
 - Colorful map with dark space-like background
 
-## Installation
+## Step-by-step setup
 
+**1. Clone the repository**
 ```bash
 git clone https://github.com/sofiapereira2/world-history-map.git
 cd world-history-map
+```
+
+**2. Install dependencies**
+```bash
 pip install -r requirements.txt
 ```
 
-## Usage
+**3. Get your Anthropic API key**
+- Go to [console.anthropic.com](https://console.anthropic.com)
+- Sign in with your Anthropic/Claude account
+- Go to **Settings → API Keys → Create Key**
+- Copy the key (it is only shown once)
 
+**4. Create a `.env` file with your key**
 ```bash
-ANTHROPIC_API_KEY="your-api-key" python3 app.py
+echo 'ANTHROPIC_API_KEY="sk-ant-your-key-here"' > .env
 ```
 
-Then open your browser at **http://localhost:8050**
+**5. Run the app**
+```bash
+ANTHROPIC_API_KEY="sk-ant-your-key-here" python3 app.py
+```
+
+**6. Open in your browser**
+```
+http://localhost:8050
+```
+
+That's it! Click any country on the globe to read its history.
 
 ## Stack
 
